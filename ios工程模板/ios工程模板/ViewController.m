@@ -18,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //创建一个NSNumber对象
+    NSNumber * data = [NSNumber numberWithBool:0];
+    //初始化NSNumber对象
+    NSNumber * data1 =  [[NSNumber alloc] initWithBool:0];
+    NSUInteger aa =  data.intValue;
+
+    NSUUID * id =  [NSUUID UUID];
+    
 }
 
 
