@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ios工程模板
 //
-//  Created by 陈火灿 on 2020/3/7.
+//  Created by 陈火灿 on 2020/7/11.
 //  Copyright © 2020 陈火灿. All rights reserved.
 //
 
@@ -14,20 +14,19 @@
 
 @implementation ViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    //创建一个NSNumber对象
-    NSNumber * data = [NSNumber numberWithBool:0];
-    //初始化NSNumber对象
-    NSNumber * data1 =  [[NSNumber alloc] initWithBool:0];
-    NSUInteger aa =  data.intValue;
-
-    NSUUID * id =  [NSUUID UUID];
-    
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
