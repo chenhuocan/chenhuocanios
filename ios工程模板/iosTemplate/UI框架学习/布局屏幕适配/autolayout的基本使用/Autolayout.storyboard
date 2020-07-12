@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xaa-8b-1IC">
+            <objects>
+                <viewController id="SZC-Y7-mJD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pjj-F7-HZw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-pe-05J">
+                                <rect key="frame" x="46" y="220" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PhC-b3-rpi" firstAttribute="bottom" secondItem="Xao-pe-05J" secondAttribute="bottom" constant="514" id="3Jb-Lb-mmI"/>
+                            <constraint firstItem="Xao-pe-05J" firstAttribute="top" secondItem="PhC-b3-rpi" secondAttribute="top" constant="176" id="NSk-o6-HyK"/>
+                            <constraint firstItem="Xao-pe-05J" firstAttribute="leading" secondItem="PhC-b3-rpi" secondAttribute="leading" constant="46" id="VRJ-ss-3T6"/>
+                            <constraint firstItem="PhC-b3-rpi" firstAttribute="trailing" secondItem="Xao-pe-05J" secondAttribute="trailing" constant="128" id="vtw-nV-dAv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PhC-b3-rpi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Nh-th-l0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="105"/>
+        </scene>
+    </scenes>
+</document>
