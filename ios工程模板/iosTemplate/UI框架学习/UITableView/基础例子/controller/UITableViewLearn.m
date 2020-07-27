@@ -9,7 +9,7 @@
 #import "UITableViewLearn.h"
 #import "CHCarGroup.h" //引入模型
 #import "CHCar.h"
-
+#import "MJExtension.h"
 @interface UITableViewLearn ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) NSArray *carGroups; // 所有的车数据
@@ -44,10 +44,19 @@
 //    self.tableView.tableHeaderView = [[UISwitch alloc] init];
 //    // 设置表尾控件
 //    self.tableView.tableFooterView = [[UISwitch alloc] init];
+//    设置索引条的文字颜色 ---------- 重点 索引条功能
+    self.tableView.sectionIndexColor = [UIColor redColor];
+    // 设置索引条的背景颜色
+    self.tableView.sectionIndexBackgroundColor = [UIColor yellowColor];
     
   // 根据ID 这个标识 注册对应的cell类型 为UITableViewCell(只注册一次)  优化方式二 通过注册方式
   //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 }
+// 隐藏状态栏
+- (BOOL)prefersStatusBarHidden{
+    return YES;
+}
+
 
 #pragma mark ---UITableViewDataSource
 
@@ -150,7 +159,8 @@
 //           return @"日系品牌";
 //       }
     CHCarGroup *group = self.carGroups[section];
-    return group.header;
+    // return group.header;
+    return group.title;
 }
 
 
@@ -169,6 +179,22 @@
     CHCarGroup *group = self.carGroups[section];
     return group.footer;
 }
+
+/**
+ *  返回索引条的文字
+ */
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+//    NSMutableArray *titles = [NSMutableArray array];
+//    for (CHGCarGroup *group in self.carGroups) {
+//        [titles addObject:group.title];
+//    }
+//
+//    return titles;
+    
+    // 抽取self.carGroups 这个数组中每一个元素(CHGCarGroup对象)的title属性的值,放在一个新的数组中返回
+    return [self.carGroups valueForKeyPath:@"title"];
+}
+
 
 
 #pragma mark ---UITableViewDelegate
@@ -192,9 +218,9 @@
 ///  返回每一组显示的头部控件
 /// @param tableView <#tableView description#>
 /// @param section <#section description#>
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    return [UIButton buttonWithType:UIButtonTypeContactAdd];
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    return [UIButton buttonWithType:UIButtonTypeContactAdd];
+//}
 
 /// 返回每一组显示的尾部控件
 /// @param tableView <#tableView description#>
@@ -245,14 +271,20 @@
     if(!_carGroups) {
         // 1. 加载字典数组
         //  NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"wine.plist" ofType:nil]];
-        NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"cars" ofType:@"plist"]];
-        NSMutableArray *temp = [NSMutableArray array];
-        for (NSDictionary *carGroupDict in dictArray) {
-            CHCarGroup *group = [CHCarGroup carGroupWithDict:carGroupDict];
-            [temp addObject:group];
-        }
-        _carGroups = temp;
+    
+        //        NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"cars" ofType:@"plist"]];
+        //        // 2.字典数组->模型数组
+        //        NSMutableArray *temp = [NSMutableArray array];
+        //        for (NSDictionary *carGroupDict in dictArray) {
+        //            CHCarGroup *group = [CHCarGroup carGroupWithDict:carGroupDict];
+        //            [temp addObject:group];
+        //        }
+        //        _carGroups = temp;
         
+        [CHCarGroup mj_setupObjectClassInArray:^NSDictionary *{
+             return @{@"cars" : [CHCar class]};
+        }];
+        _carGroups = [CHCarGroup mj_objectArrayWithFilename:@"cars.plist"];
     }
     return _carGroups;
 }

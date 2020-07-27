@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSArray *cars;
 
+@property (nonatomic ,copy)NSString * title;
+
 + (instancetype) carGroupWithDict:(NSDictionary *) dict;
 @end
 
