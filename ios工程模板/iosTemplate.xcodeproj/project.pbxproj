@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0246A224CFA4DB00C978A4 /* CHTgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0246A124CFA4DB00C978A4 /* CHTgCell.m */; };
+		1E0246A524CFA9D500C978A4 /* CHCustomTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0246A424CFA9D500C978A4 /* CHCustomTable.m */; };
+		1E0246A724CFAB0900C978A4 /* CHCUstomTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0246A624CFAB0900C978A4 /* CHCUstomTable.storyboard */; };
 		1E027B9924BD339500B1E8A1 /* UITableViewLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E027B9824BD339500B1E8A1 /* UITableViewLearn.m */; };
 		1E027B9B24BD33A400B1E8A1 /* UITableViewLearn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E027B9A24BD33A400B1E8A1 /* UITableViewLearn.storyboard */; };
 		1E4495C62413DDC300B5B00E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4495C52413DDC300B5B00E /* AppDelegate.m */; };
@@ -14,6 +17,8 @@
 		1E4495D12413DDC600B5B00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4495D02413DDC600B5B00E /* Assets.xcassets */; };
 		1E4495D42413DDC600B5B00E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4495D22413DDC600B5B00E /* LaunchScreen.storyboard */; };
 		1E4495D72413DDC600B5B00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4495D62413DDC600B5B00E /* main.m */; };
+		1E490DFC24D0FC5100575D65 /* tgs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E490DFB24D0FC5100575D65 /* tgs.plist */; };
+		1E490DFF24D0FCA700575D65 /* CHCellModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E490DFE24D0FCA700575D65 /* CHCellModule.m */; };
 		1E506A2124B9B56E00441C65 /* sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E506A2024B9B56E00441C65 /* sound.m */; };
 		1E506A2724B9B7EB00441C65 /* mySong2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E506A2424B9B7EB00441C65 /* mySong2.mp3 */; };
 		1E506A2824B9B7EB00441C65 /* mySong1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E506A2524B9B7EB00441C65 /* mySong1.mp3 */; };
@@ -54,6 +59,13 @@
 		1EA8DB7324BAE9880080A076 /* Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA8DB7224BAE9880080A076 /* Autolayout.m */; };
 		1EA8DB7524BAE9930080A076 /* Autolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA8DB7424BAE9930080A076 /* Autolayout.storyboard */; };
 		1EA8DB7924BAFB1C0080A076 /* MasonryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA8DB7824BAFB1C0080A076 /* MasonryTest.m */; };
+		1EAABB5924DF8B6900A147BD /* CHXIBTgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAABB5724DF8B6900A147BD /* CHXIBTgCell.m */; };
+		1EAABB5A24DF8B6900A147BD /* CHXIBTgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EAABB5824DF8B6900A147BD /* CHXIBTgCell.xib */; };
+		1EAABB6624DFD6C600A147BD /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EAABB6524DFD6C600A147BD /* statuses.plist */; };
+		1EAABB6C24DFD71400A147BD /* CHStatusModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAABB6B24DFD71400A147BD /* CHStatusModule.m */; };
+		1EAABB6F24DFD74700A147BD /* CHStatusCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAABB6E24DFD74700A147BD /* CHStatusCellTableViewCell.m */; };
+		1EAABB7424DFDAAD00A147BD /* CHTableHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAABB7324DFDAAD00A147BD /* CHTableHeight.storyboard */; };
+		1EAABB7724DFDB9300A147BD /* CHHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAABB7624DFDB9300A147BD /* CHHeight.m */; };
 		1EACC2D324B999B00028A837 /* UILabelLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EACC2D224B999B00028A837 /* UILabelLearn.m */; };
 		1EACC2D724B99F780028A837 /* UIImageViewLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EACC2D624B99F780028A837 /* UIImageViewLearn.m */; };
 		1EC6213F24B9A84E000E948D /* imageResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6213E24B9A84E000E948D /* imageResources.m */; };
@@ -77,11 +89,15 @@
 		1ED5CBB824B968AB00C08332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5CBB724B968AB00C08332 /* Main.storyboard */; };
 		1ED5CBBD24B9827D00C08332 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5CBBC24B9827D00C08332 /* ViewController.m */; };
 		1ED5CBC224B98B8C00C08332 /* UIViewLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5CBC124B98B8C00C08332 /* UIViewLearn.m */; };
-		30813D196FF604505D8D57BB /* Pods_iosTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB77DBB5A4E691714EE9416 /* Pods_iosTemplate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C49E8BB89B2C56FEB64AD4A /* Pods-iosTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosTemplate.release.xcconfig"; path = "Target Support Files/Pods-iosTemplate/Pods-iosTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		1E0246A024CFA4DB00C978A4 /* CHTgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTgCell.h; sourceTree = "<group>"; };
+		1E0246A124CFA4DB00C978A4 /* CHTgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTgCell.m; sourceTree = "<group>"; };
+		1E0246A324CFA9D500C978A4 /* CHCustomTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCustomTable.h; sourceTree = "<group>"; };
+		1E0246A424CFA9D500C978A4 /* CHCustomTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCustomTable.m; sourceTree = "<group>"; };
+		1E0246A624CFAB0900C978A4 /* CHCUstomTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CHCUstomTable.storyboard; sourceTree = "<group>"; };
 		1E027B9724BD339500B1E8A1 /* UITableViewLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewLearn.h; sourceTree = "<group>"; };
 		1E027B9824BD339500B1E8A1 /* UITableViewLearn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewLearn.m; sourceTree = "<group>"; };
 		1E027B9A24BD33A400B1E8A1 /* UITableViewLearn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITableViewLearn.storyboard; sourceTree = "<group>"; };
@@ -93,6 +109,9 @@
 		1E4495D32413DDC600B5B00E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E4495D52413DDC600B5B00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E4495D62413DDC600B5B00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E490DFB24D0FC5100575D65 /* tgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
+		1E490DFD24D0FCA700575D65 /* CHCellModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCellModule.h; sourceTree = "<group>"; };
+		1E490DFE24D0FCA700575D65 /* CHCellModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCellModule.m; sourceTree = "<group>"; };
 		1E506A1F24B9B56E00441C65 /* sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sound.h; sourceTree = "<group>"; };
 		1E506A2024B9B56E00441C65 /* sound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sound.m; sourceTree = "<group>"; };
 		1E506A2424B9B7EB00441C65 /* mySong2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mySong2.mp3; sourceTree = "<group>"; };
@@ -173,6 +192,18 @@
 		1EA8DB7424BAE9930080A076 /* Autolayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Autolayout.storyboard; sourceTree = "<group>"; };
 		1EA8DB7724BAFB1C0080A076 /* MasonryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryTest.h; sourceTree = "<group>"; };
 		1EA8DB7824BAFB1C0080A076 /* MasonryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryTest.m; sourceTree = "<group>"; };
+		1EAABB5624DF8B6900A147BD /* CHXIBTgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHXIBTgCell.h; sourceTree = "<group>"; };
+		1EAABB5724DF8B6900A147BD /* CHXIBTgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHXIBTgCell.m; sourceTree = "<group>"; };
+		1EAABB5824DF8B6900A147BD /* CHXIBTgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CHXIBTgCell.xib; sourceTree = "<group>"; };
+		1EAABB6524DFD6C600A147BD /* statuses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statuses.plist; sourceTree = "<group>"; };
+		1EAABB6A24DFD71400A147BD /* CHStatusModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHStatusModule.h; sourceTree = "<group>"; };
+		1EAABB6B24DFD71400A147BD /* CHStatusModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHStatusModule.m; sourceTree = "<group>"; };
+		1EAABB6D24DFD74700A147BD /* CHStatusCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHStatusCellTableViewCell.h; sourceTree = "<group>"; };
+		1EAABB6E24DFD74700A147BD /* CHStatusCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHStatusCellTableViewCell.m; sourceTree = "<group>"; };
+		1EAABB7324DFDAAD00A147BD /* CHTableHeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CHTableHeight.storyboard; sourceTree = "<group>"; };
+		1EAABB7524DFDB9300A147BD /* CHHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHeight.h; sourceTree = "<group>"; };
+		1EAABB7624DFDB9300A147BD /* CHHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHeight.m; sourceTree = "<group>"; };
+		1EAABB7824DFE20800A147BD /* UITableView.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UITableView.md; sourceTree = "<group>"; };
 		1EACC2D124B999B00028A837 /* UILabelLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelLearn.h; sourceTree = "<group>"; };
 		1EACC2D224B999B00028A837 /* UILabelLearn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelLearn.m; sourceTree = "<group>"; };
 		1EACC2D524B99F780028A837 /* UIImageViewLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewLearn.h; sourceTree = "<group>"; };
@@ -227,7 +258,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30813D196FF604505D8D57BB /* Pods_iosTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +275,7 @@
 		1E027B9624BD2FE300B1E8A1 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				1EAABB5B24DFD65B00A147BD /* 自定义不等高度cell */,
 				1ED42EAE24CF155400A1FB76 /* 自定义cell */,
 				1ED42EAD24CF154500A1FB76 /* 基础例子 */,
 				1E027B9A24BD33A400B1E8A1 /* UITableViewLearn.storyboard */,
@@ -605,6 +636,54 @@
 			path = "Masonry第三方库布局";
 			sourceTree = "<group>";
 		};
+		1EAABB5524DF8B0600A147BD /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				1EAABB5624DF8B6900A147BD /* CHXIBTgCell.h */,
+				1EAABB5724DF8B6900A147BD /* CHXIBTgCell.m */,
+				1EAABB5824DF8B6900A147BD /* CHXIBTgCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		1EAABB5B24DFD65B00A147BD /* 自定义不等高度cell */ = {
+			isa = PBXGroup;
+			children = (
+				1EAABB5E24DFD68800A147BD /* controller */,
+				1EAABB5D24DFD67700A147BD /* view */,
+				1EAABB5C24DFD66D00A147BD /* module */,
+			);
+			path = "自定义不等高度cell";
+			sourceTree = "<group>";
+		};
+		1EAABB5C24DFD66D00A147BD /* module */ = {
+			isa = PBXGroup;
+			children = (
+				1EAABB6A24DFD71400A147BD /* CHStatusModule.h */,
+				1EAABB6B24DFD71400A147BD /* CHStatusModule.m */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		1EAABB5D24DFD67700A147BD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1EAABB6D24DFD74700A147BD /* CHStatusCellTableViewCell.h */,
+				1EAABB6E24DFD74700A147BD /* CHStatusCellTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1EAABB5E24DFD68800A147BD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1EAABB7324DFDAAD00A147BD /* CHTableHeight.storyboard */,
+				1EAABB7524DFDB9300A147BD /* CHHeight.h */,
+				1EAABB7624DFDB9300A147BD /* CHHeight.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		1EACC2D024B9998D0028A837 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +759,8 @@
 		1ED42E7024CE5AC000A1FB76 /* localdata */ = {
 			isa = PBXGroup;
 			children = (
+				1EAABB6524DFD6C600A147BD /* statuses.plist */,
+				1E490DFB24D0FC5100575D65 /* tgs.plist */,
 				1ED42E8324CF06EC00A1FB76 /* cars.plist */,
 			);
 			path = localdata;
@@ -747,6 +828,9 @@
 		1ED42EAF24CF157300A1FB76 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				1E0246A324CFA9D500C978A4 /* CHCustomTable.h */,
+				1E0246A424CFA9D500C978A4 /* CHCustomTable.m */,
+				1E0246A624CFAB0900C978A4 /* CHCUstomTable.storyboard */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -754,6 +838,9 @@
 		1ED42EB024CF158100A1FB76 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				1EAABB5524DF8B0600A147BD /* xib */,
+				1E0246A024CFA4DB00C978A4 /* CHTgCell.h */,
+				1E0246A124CFA4DB00C978A4 /* CHTgCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -761,6 +848,8 @@
 		1ED42EB124CF158600A1FB76 /* module */ = {
 			isa = PBXGroup;
 			children = (
+				1E490DFD24D0FCA700575D65 /* CHCellModule.h */,
+				1E490DFE24D0FCA700575D65 /* CHCellModule.m */,
 			);
 			path = module;
 			sourceTree = "<group>";
@@ -814,6 +903,7 @@
 			children = (
 				1ED5CBBE24B987AF00C08332 /* 常见错误.md */,
 				1ED5CBC324B9970500C08332 /* 控制台命令.md */,
+				1EAABB7824DFE20800A147BD /* UITableView.md */,
 			);
 			path = "文档";
 			sourceTree = "<group>";
@@ -886,13 +976,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E506A6924B9F4B300441C65 /* XIBView.xib in Resources */,
+				1E490DFC24D0FC5100575D65 /* tgs.plist in Resources */,
 				1E4495D42413DDC600B5B00E /* LaunchScreen.storyboard in Resources */,
 				1ED5CBB824B968AB00C08332 /* Main.storyboard in Resources */,
+				1EAABB5A24DF8B6900A147BD /* CHXIBTgCell.xib in Resources */,
 				1ED42E8424CF06EC00A1FB76 /* cars.plist in Resources */,
 				1E506A2724B9B7EB00441C65 /* mySong2.mp3 in Resources */,
 				1E027B9B24BD33A400B1E8A1 /* UITableViewLearn.storyboard in Resources */,
+				1EAABB6624DFD6C600A147BD /* statuses.plist in Resources */,
 				1ED5CBB224B9635F00C08332 /* UI.storyboard in Resources */,
+				1EAABB7424DFDAAD00A147BD /* CHTableHeight.storyboard in Resources */,
 				1E506A2E24B9C03400441C65 /* UIButton.storyboard in Resources */,
+				1E0246A724CFAB0900C978A4 /* CHCUstomTable.storyboard in Resources */,
 				1E4495D12413DDC600B5B00E /* Assets.xcassets in Resources */,
 				1E506A4824B9D98800441C65 /* products.plist in Resources */,
 				1E506A8124BAB2EA00441C65 /* ScrollView.storyboard in Resources */,
@@ -935,17 +1030,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E506A3624B9CE8200441C65 /* plist.m in Sources */,
+				1EAABB6F24DFD74700A147BD /* CHStatusCellTableViewCell.m in Sources */,
 				1ED42EA824CF089900A1FB76 /* NSObject+MJClass.m in Sources */,
+				1E0246A524CFA9D500C978A4 /* CHCustomTable.m in Sources */,
 				1E506A6124B9E96E00441C65 /* XIBController.m in Sources */,
 				1E506A5724B9E3D600441C65 /* MVCView.m in Sources */,
 				1EA8DB6F24BAE6580080A076 /* Autoresizing.m in Sources */,
 				1EACC2D724B99F780028A837 /* UIImageViewLearn.m in Sources */,
 				1E9B5FB124BB01E900EAEE94 /* MASConstraintMaker.m in Sources */,
+				1EAABB6C24DFD71400A147BD /* CHStatusModule.m in Sources */,
 				1EC6213F24B9A84E000E948D /* imageResources.m in Sources */,
 				1E027B9924BD339500B1E8A1 /* UITableViewLearn.m in Sources */,
 				1E506A3A24B9D0C400441C65 /* customControl.m in Sources */,
 				1E9B5FB424BB01E900EAEE94 /* View+MASAdditions.m in Sources */,
 				1E506A7D24BAAC8700441C65 /* UIScrollViewLearn.m in Sources */,
+				1EAABB5924DF8B6900A147BD /* CHXIBTgCell.m in Sources */,
 				1E4495C62413DDC300B5B00E /* AppDelegate.m in Sources */,
 				1E506A3D24B9D10D00441C65 /* HCCustomView.m in Sources */,
 				1ED42EA724CF089900A1FB76 /* NSObject+MJProperty.m in Sources */,
@@ -972,6 +1071,7 @@
 				1E506A8824BABF1800441C65 /* EventViewController.m in Sources */,
 				1E506A2124B9B56E00441C65 /* sound.m in Sources */,
 				1E506A5424B9E3C700441C65 /* MVCModel.m in Sources */,
+				1EAABB7724DFDB9300A147BD /* CHHeight.m in Sources */,
 				1E9B5FB024BB01E900EAEE94 /* MASCompositeConstraint.m in Sources */,
 				1E9B5FB724BB01E900EAEE94 /* MASViewAttribute.m in Sources */,
 				1ED42E7824CE5B5800A1FB76 /* CHCarGroup.m in Sources */,
@@ -988,6 +1088,8 @@
 				1E506A5124B9E38C00441C65 /* MVCController.m in Sources */,
 				1ED42EA624CF089900A1FB76 /* MJExtensionConst.m in Sources */,
 				1E9B5FAF24BB01E900EAEE94 /* ViewController+MASAdditions.m in Sources */,
+				1E0246A224CFA4DB00C978A4 /* CHTgCell.m in Sources */,
+				1E490DFF24D0FCA700575D65 /* CHCellModule.m in Sources */,
 				1E506A2C24B9C02800441C65 /* UIButtonLearn.m in Sources */,
 				1ED42EA324CF089900A1FB76 /* NSObject+MJKeyValue.m in Sources */,
 			);
