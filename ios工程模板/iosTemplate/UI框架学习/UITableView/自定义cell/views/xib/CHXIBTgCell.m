@@ -22,6 +22,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    // 初始化代码 可以改变xib 上的控件上的属性，在页面展示出来之前
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

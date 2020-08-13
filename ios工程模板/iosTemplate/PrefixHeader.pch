@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  iosTemplate
+//
+//  Created by 陈火灿 on 2020/8/12.
+//  Copyright © 2020 陈火灿. All rights reserved.
+//
+
+//PCH作用：
+//1.存入一些公有的宏。
+//2.导入公用的头文件。
+//3.自定义Log
+//
+//原理：工程在编译过程当中，把PCH文件当中的所有内容导入到工程当中所有文件当中。
+//注意：OC文件对pch文件中的OC自定义的内容识别但对C文件不识别会报错，如果有C文件要做判断，每一个OC文件内部都默认有一个隐式宏："--OBJC--"。
+
+
+// 1、 创建pch 文件
+// 2、 build Settings 中  precompile   PrefixHeader   设置成YES
+// 3、 prefix Header  设置相对路径
+//点击PCH文件，Xcode的右侧会显示PCH的属性。这里我们可以获取到PCH的绝对路径。从工程的路径开始，前面使用
+// $(SRCROOT)代替，即为PCH的相对路径。
+//Users/chenhuocan/SvnClient/chenhuocanios/ios工程模板/iosTemplate
+//$(SRCROOT)/iosTemplate/PrefixHeader.pch
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+//获取系统版本
+#define IOS_SYSTEM_STRING [[UIDevice currentDevice] systemVersion]
+
+//设置RGB颜色
+#define CHRGBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+//打印设置
+#ifdef DEBUG  //如果是调试模式，自定义如下： “...代表多个参数”
+#define CHLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else //如果是发布模式，自定义如下
+#define CHLog(...)
+#endif
+
+//屏幕的宽度和高度
+#define SCREENWIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREENHEIGHT [[UIScreen mainScreen] bounds].size.height
+
+//状态栏高度
+#define kStatusBar_Height kDevice_Is_iPhoneX?44:20
+#define kTableView_Height kDevice_Is_iPhoneX?88:64
+//等比例适配
+#define autoSizeScaleW [[UIScreen mainScreen] bounds].size.width/375
+#define autoSizeScaleH [[UIScreen mainScreen] bounds].size.height/667
+
+
+
+
+
+#endif /* oc 文件才定义这些宏 */
+#endif /* PrefixHeader_pch */
+
+
+// Xcode7当中多了一个LaunchScreen.storyboard，用来设置启动页面,
+//  如果没有设置启动页面，默认它的屏幕的大小是4s大小。
+//  LaunchScreen底层实现：把LaunchScreen.storyboard当中内容，生成一张图片。
+
+//info.plist作用：设置应用程序的配置信息，它是一个字典。
+//Bundle name：应用程序它的名称。
+//Bundle identifier：应用程序的唯一标识。
+//Bundle versions string, short：版本号。
+//Bundle version：应用程序打包的版本号。

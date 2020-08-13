@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CHStatusModule : NSObject
@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 配图 */
 @property (nonatomic, copy) NSString *picture;
+
+/** cell的高度 */
+@property (nonatomic, assign) CGFloat cellHeight;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -49,14 +49,83 @@
     // 设置索引条的背景颜色
     self.tableView.sectionIndexBackgroundColor = [UIColor yellowColor];
     
-  // 根据ID 这个标识 注册对应的cell类型 为UITableViewCell(只注册一次)  优化方式二 通过注册方式
+    
+    // self-sizing(iOS8 以后)
+    // 告诉tableView所有cell的真实高度是自动计算的(根据设置的约束)
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    // 设置估算高度
+     self.tableView.estimatedRowHeight = 44;
+    // self-sizing(iOS8 以前)
+    // 设置估算高度 (减少tableView:heightForRowAtIndexPath:的调用次数)
+    //self.tableView.estimatedRowHeight = 200;
+    
+  // 优化方式二 通过注册方式 根据ID 这个标识 注册对应的cell类型 为UITableViewCell(只注册一次)
   //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+    
+    // ios11 以上
+    if (@available(iOS 11.0, *)) {
+    
+    }
 }
 // 隐藏状态栏
 - (BOOL)prefersStatusBarHidden{
     return YES;
 }
 
+#pragma mark ---列表刷新的方法 全局刷新 或局部刷新
+//告诉tableView数据变了,赶紧刷新 -----全局刷新
+- (void)tableReloadData{
+    [self.tableView reloadData];
+}
+
+
+/// 局部刷新
+- (void)localRefresh {
+    
+    
+    // 局部刷新
+    NSArray *indexPaths = @[
+                          [NSIndexPath indexPathForRow:0 inSection:0],
+                          [NSIndexPath indexPathForRow:1 inSection:0],
+                          ];
+    
+    //插入数据---局部刷新
+    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationRight];
+    //删除数据---局部刷新
+    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationMiddle];
+    //更新数据---局部刷新
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
+    
+}
+
+/// 批量删除
+///  https://www.jianshu.com/p/d409f14fdbdb
+- (void)remove {
+    // 千万不要一边遍历一边删除,因为每删除一个元素,其他元素的索引可能会发生变化
+//    NSMutableArray *deletedWine = [NSMutableArray array];
+//    for (NSIndexPath *indexPath in self.tableView.indexPathsForSelectedRows) {
+//        [deletedWine addObject:self.wineArray[indexPath.row]];
+//    }
+    
+    // 修改模型
+    //[self.wineArray removeObjectsInArray:deletedWine];
+    
+    // 刷新表格
+    //[self.tableView reloadData];
+//    [self.tableView deleteRowsAtIndexPaths:self.tableView.indexPathsForSelectedRows withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    // 刷新表格
+//    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+#pragma mark ---编辑模式
+- (void)editMode{
+    // 进入编辑模式
+    //  self.tableView.editing = !self.tableView.isEditing;
+    [self.tableView setEditing:YES animated:YES];
+    // 调用 setEditing 方法配合 下面的代理方法进入编辑模式
+    //- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+}
 
 #pragma mark ---UITableViewDataSource
 
@@ -255,6 +324,38 @@
 //        return 50;
 //    }
 //}
+
+/**
+ *  只要实现这个方法,就拥有左滑删除功能
+ *  点击左滑出现的Delete按钮 会调用这个
+ */
+- (void)tableView:(UITableView *)tableViewcommitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+ 
+}
+/**
+ *  修改默认Delete按钮的文字
+ */
+//- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return @"删除";
+//}
+
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    UITableViewRowAction *action = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"关注" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        // 实现操作内容
+    }];
+    
+    UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        // 实现操作内容
+
+        
+    }];
+    return @[action1,action];
+}
+
+
+
 #pragma mark 模拟数据处理 懒加载
 /********************************************************
 1> plist解析:
