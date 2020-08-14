@@ -54,6 +54,17 @@
 		1E540C4624E3A21D00DF1F5D /* CHUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E540C4524E3A21D00DF1F5D /* CHUIApplication.m */; };
 		1E6350A324E4E25B009A0008 /* CHWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350A224E4E25B009A0008 /* CHWindow.m */; };
 		1E6350A624E4E697009A0008 /* CHStudents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350A524E4E697009A0008 /* CHStudents.m */; };
+		1E6350AA24E4E8A4009A0008 /* CHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350A924E4E8A4009A0008 /* CHColor.m */; };
+		1E6350AD24E50C18009A0008 /* CHTouches.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350AC24E50C18009A0008 /* CHTouches.m */; };
+		1E6350B124E50D8A009A0008 /* CHTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350B024E50D8A009A0008 /* CHTransform.m */; };
+		1E6350B524E50E67009A0008 /* CHGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350B424E50E67009A0008 /* CHGestures.m */; };
+		1E6350BC24E53123009A0008 /* CHHitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350BB24E53123009A0008 /* CHHitTest.m */; };
+		1E6350C224E57265009A0008 /* CHCAlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350C124E57265009A0008 /* CHCAlayer.m */; };
+		1E6350C524E57728009A0008 /* CHWindow1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350C324E57728009A0008 /* CHWindow1.m */; };
+		1E6350C924E6120E009A0008 /* CHImplicitAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350C824E6120E009A0008 /* CHImplicitAnimation.m */; };
+		1E6350CD24E61613009A0008 /* CHBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350CC24E61613009A0008 /* CHBasicAnimation.m */; };
+		1E6350D124E61881009A0008 /* CHFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350D024E61881009A0008 /* CHFrameAnimation.m */; };
+		1E6350D524E619DC009A0008 /* CHCATransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6350D424E619DC009A0008 /* CHCATransition.m */; };
 		1E9B5FAE24BB01E900EAEE94 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B5F9624BB01E900EAEE94 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		1E9B5FAF24BB01E900EAEE94 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B5F9F24BB01E900EAEE94 /* ViewController+MASAdditions.m */; };
 		1E9B5FB024BB01E900EAEE94 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B5FA324BB01E900EAEE94 /* MASCompositeConstraint.m */; };
@@ -187,6 +198,29 @@
 		1E6350A224E4E25B009A0008 /* CHWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHWindow.m; sourceTree = "<group>"; };
 		1E6350A424E4E697009A0008 /* CHStudents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHStudents.h; sourceTree = "<group>"; };
 		1E6350A524E4E697009A0008 /* CHStudents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHStudents.m; sourceTree = "<group>"; };
+		1E6350A824E4E8A4009A0008 /* CHColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHColor.h; sourceTree = "<group>"; };
+		1E6350A924E4E8A4009A0008 /* CHColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHColor.m; sourceTree = "<group>"; };
+		1E6350AB24E50C18009A0008 /* CHTouches.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTouches.h; sourceTree = "<group>"; };
+		1E6350AC24E50C18009A0008 /* CHTouches.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTouches.m; sourceTree = "<group>"; };
+		1E6350AF24E50D8A009A0008 /* CHTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTransform.h; sourceTree = "<group>"; };
+		1E6350B024E50D8A009A0008 /* CHTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTransform.m; sourceTree = "<group>"; };
+		1E6350B324E50E67009A0008 /* CHGestures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHGestures.h; sourceTree = "<group>"; };
+		1E6350B424E50E67009A0008 /* CHGestures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHGestures.m; sourceTree = "<group>"; };
+		1E6350B824E52F07009A0008 /* 事件响应.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "事件响应.md"; sourceTree = "<group>"; };
+		1E6350BA24E53123009A0008 /* CHHitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHitTest.h; sourceTree = "<group>"; };
+		1E6350BB24E53123009A0008 /* CHHitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHitTest.m; sourceTree = "<group>"; };
+		1E6350C024E57265009A0008 /* CHCAlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCAlayer.h; sourceTree = "<group>"; };
+		1E6350C124E57265009A0008 /* CHCAlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCAlayer.m; sourceTree = "<group>"; };
+		1E6350C324E57728009A0008 /* CHWindow1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHWindow1.m; sourceTree = "<group>"; };
+		1E6350C424E57728009A0008 /* CHWindow1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHWindow1.h; sourceTree = "<group>"; };
+		1E6350C724E6120E009A0008 /* CHImplicitAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHImplicitAnimation.h; sourceTree = "<group>"; };
+		1E6350C824E6120E009A0008 /* CHImplicitAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHImplicitAnimation.m; sourceTree = "<group>"; };
+		1E6350CB24E61613009A0008 /* CHBasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHBasicAnimation.h; sourceTree = "<group>"; };
+		1E6350CC24E61613009A0008 /* CHBasicAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHBasicAnimation.m; sourceTree = "<group>"; };
+		1E6350CF24E61881009A0008 /* CHFrameAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHFrameAnimation.h; sourceTree = "<group>"; };
+		1E6350D024E61881009A0008 /* CHFrameAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHFrameAnimation.m; sourceTree = "<group>"; };
+		1E6350D324E619DC009A0008 /* CHCATransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCATransition.h; sourceTree = "<group>"; };
+		1E6350D424E619DC009A0008 /* CHCATransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCATransition.m; sourceTree = "<group>"; };
 		1E94AC0A24B1DFA000910012 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1E9B5F9324BB00E800EAEE94 /* iosTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9B5F9524BB01E900EAEE94 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -326,6 +360,12 @@
 		1E0C347D24E22A5200F7C572 /* 核心动画 */ = {
 			isa = PBXGroup;
 			children = (
+				1E6350D224E619AB009A0008 /* 转场动画 */,
+				1E6350CE24E61862009A0008 /* 帧动画 */,
+				1E6350C024E57265009A0008 /* CHCAlayer.h */,
+				1E6350C124E57265009A0008 /* CHCAlayer.m */,
+				1E6350CB24E61613009A0008 /* CHBasicAnimation.h */,
+				1E6350CC24E61613009A0008 /* CHBasicAnimation.m */,
 			);
 			path = "核心动画";
 			sourceTree = "<group>";
@@ -563,8 +603,12 @@
 		1E506A8524BABE6200441C65 /* 控件的事件监听 */ = {
 			isa = PBXGroup;
 			children = (
+				1E6350B924E530FA009A0008 /* hitTest */,
+				1E6350B224E50E3E009A0008 /* 手势识别 */,
 				1E506A8624BABF1800441C65 /* EventViewController.h */,
 				1E506A8724BABF1800441C65 /* EventViewController.m */,
+				1E6350AB24E50C18009A0008 /* CHTouches.h */,
+				1E6350AC24E50C18009A0008 /* CHTouches.m */,
 			);
 			path = "控件的事件监听";
 			sourceTree = "<group>";
@@ -617,6 +661,78 @@
 				1E6350A224E4E25B009A0008 /* CHWindow.m */,
 			);
 			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		1E6350A724E4E887009A0008 /* 颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				1E6350A824E4E8A4009A0008 /* CHColor.h */,
+				1E6350A924E4E8A4009A0008 /* CHColor.m */,
+			);
+			path = "颜色";
+			sourceTree = "<group>";
+		};
+		1E6350AE24E50D71009A0008 /* transform */ = {
+			isa = PBXGroup;
+			children = (
+				1E6350AF24E50D8A009A0008 /* CHTransform.h */,
+				1E6350B024E50D8A009A0008 /* CHTransform.m */,
+			);
+			path = transform;
+			sourceTree = "<group>";
+		};
+		1E6350B224E50E3E009A0008 /* 手势识别 */ = {
+			isa = PBXGroup;
+			children = (
+				1E6350B324E50E67009A0008 /* CHGestures.h */,
+				1E6350B424E50E67009A0008 /* CHGestures.m */,
+			);
+			path = "手势识别";
+			sourceTree = "<group>";
+		};
+		1E6350B924E530FA009A0008 /* hitTest */ = {
+			isa = PBXGroup;
+			children = (
+				1E6350C424E57728009A0008 /* CHWindow1.h */,
+				1E6350C324E57728009A0008 /* CHWindow1.m */,
+				1E6350BA24E53123009A0008 /* CHHitTest.h */,
+				1E6350BB24E53123009A0008 /* CHHitTest.m */,
+			);
+			path = hitTest;
+			sourceTree = "<group>";
+		};
+		1E6350C624E611C9009A0008 /* 隐式动画 */ = {
+			isa = PBXGroup;
+			children = (
+				1E6350C724E6120E009A0008 /* CHImplicitAnimation.h */,
+				1E6350C824E6120E009A0008 /* CHImplicitAnimation.m */,
+			);
+			path = "隐式动画";
+			sourceTree = "<group>";
+		};
+		1E6350CA24E61520009A0008 /* 时间 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "时间";
+			sourceTree = "<group>";
+		};
+		1E6350CE24E61862009A0008 /* 帧动画 */ = {
+			isa = PBXGroup;
+			children = (
+				1E6350CF24E61881009A0008 /* CHFrameAnimation.h */,
+				1E6350D024E61881009A0008 /* CHFrameAnimation.m */,
+			);
+			path = "帧动画";
+			sourceTree = "<group>";
+		};
+		1E6350D224E619AB009A0008 /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				1E6350D324E619DC009A0008 /* CHCATransition.h */,
+				1E6350D424E619DC009A0008 /* CHCATransition.m */,
+			);
+			path = "转场动画";
 			sourceTree = "<group>";
 		};
 		1E94AC0324B1DE9200910012 /* architectural架构 */ = {
@@ -830,6 +946,8 @@
 		1EC6213B24B9A79A000E948D /* 动画 */ = {
 			isa = PBXGroup;
 			children = (
+				1E6350C624E611C9009A0008 /* 隐式动画 */,
+				1E6350AE24E50D71009A0008 /* transform */,
 				1E0C347D24E22A5200F7C572 /* 核心动画 */,
 				1E506A6A24B9FD9A00441C65 /* 渐变动画 */,
 				1EC6214024B9AB02000E948D /* 帧动画 */,
@@ -973,6 +1091,7 @@
 		1ED5CBB024B9633E00C08332 /* UI框架学习 */ = {
 			isa = PBXGroup;
 			children = (
+				1E6350A724E4E887009A0008 /* 颜色 */,
 				1E6350A024E4E242009A0008 /* UIWindow */,
 				1E540C4324E3A1FC00DF1F5D /* UIApplication */,
 				1E0C348024E22AEB00F7C572 /* 多控制器 */,
@@ -998,6 +1117,7 @@
 		1ED5CBB324B9637900C08332 /* foundation框架学习 */ = {
 			isa = PBXGroup;
 			children = (
+				1E6350CA24E61520009A0008 /* 时间 */,
 				1E0C347624E2233B00F7C572 /* 代理 */,
 				1E508F5E24E17DBE00827710 /* 通知 */,
 				1EA8DB6524BAE1750080A076 /* 定时器 */,
@@ -1026,6 +1146,7 @@
 				1ED5CBBE24B987AF00C08332 /* 常见错误.md */,
 				1ED5CBC324B9970500C08332 /* 控制台命令.md */,
 				1EAABB7824DFE20800A147BD /* UITableView.md */,
+				1E6350B824E52F07009A0008 /* 事件响应.md */,
 			);
 			path = "文档";
 			sourceTree = "<group>";
@@ -1066,6 +1187,7 @@
 		1E4495B92413DDC300B5B00E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CH;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "陈火灿";
 				TargetAttributes = {
@@ -1159,13 +1281,16 @@
 				1E506A5724B9E3D600441C65 /* MVCView.m in Sources */,
 				1EA8DB6F24BAE6580080A076 /* Autoresizing.m in Sources */,
 				1EACC2D724B99F780028A837 /* UIImageViewLearn.m in Sources */,
+				1E6350C524E57728009A0008 /* CHWindow1.m in Sources */,
 				1E9B5FB124BB01E900EAEE94 /* MASConstraintMaker.m in Sources */,
 				1EAABB6C24DFD71400A147BD /* CHStatusModule.m in Sources */,
 				1EC6213F24B9A84E000E948D /* imageResources.m in Sources */,
+				1E6350B124E50D8A009A0008 /* CHTransform.m in Sources */,
 				1E027B9924BD339500B1E8A1 /* UITableViewLearn.m in Sources */,
 				1E508F6D24E195D600827710 /* KVO.m in Sources */,
 				1E506A3A24B9D0C400441C65 /* customControl.m in Sources */,
 				1E9B5FB424BB01E900EAEE94 /* View+MASAdditions.m in Sources */,
+				1E6350D524E619DC009A0008 /* CHCATransition.m in Sources */,
 				1E506A7D24BAAC8700441C65 /* UIScrollViewLearn.m in Sources */,
 				1EAABB5924DF8B6900A147BD /* CHXIBTgCell.m in Sources */,
 				1E4495C62413DDC300B5B00E /* AppDelegate.m in Sources */,
@@ -1173,6 +1298,7 @@
 				1ED42EA724CF089900A1FB76 /* NSObject+MJProperty.m in Sources */,
 				1ED42EAC24CF089900A1FB76 /* MJFoundation.m in Sources */,
 				1E506A5A24B9E83300441C65 /* XMGShopView.m in Sources */,
+				1E6350D124E61881009A0008 /* CHFrameAnimation.m in Sources */,
 				1E9B5FAE24BB01E900EAEE94 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1E4495D72413DDC600B5B00E /* main.m in Sources */,
 				1E506A6424B9E99F00441C65 /* XIBView.m in Sources */,
@@ -1181,7 +1307,9 @@
 				1EA8DB6824BAE1910080A076 /* Timer.m in Sources */,
 				1ED42EA424CF089900A1FB76 /* MJProperty.m in Sources */,
 				1E4495C92413DDC300B5B00E /* SceneDelegate.m in Sources */,
+				1E6350AD24E50C18009A0008 /* CHTouches.m in Sources */,
 				1E506A4524B9D8A100441C65 /* HCProductModel.m in Sources */,
+				1E6350C224E57265009A0008 /* CHCAlayer.m in Sources */,
 				1E508F6124E17DFC00827710 /* CHNotification.m in Sources */,
 				1ED42EA224CF089900A1FB76 /* MJPropertyType.m in Sources */,
 				1E506A4124B9D76100441C65 /* Lazyloading.m in Sources */,
@@ -1209,15 +1337,20 @@
 				1ED5CBC224B98B8C00C08332 /* UIViewLearn.m in Sources */,
 				1E506A6D24B9FE1900441C65 /* GradientAnimation.m in Sources */,
 				1ED42E7524CE5B4100A1FB76 /* CHCar.m in Sources */,
+				1E6350CD24E61613009A0008 /* CHBasicAnimation.m in Sources */,
 				1E9B5FB624BB01E900EAEE94 /* MASViewConstraint.m in Sources */,
 				1E6350A624E4E697009A0008 /* CHStudents.m in Sources */,
 				1E540C4624E3A21D00DF1F5D /* CHUIApplication.m in Sources */,
 				1EACC2D324B999B00028A837 /* UILabelLearn.m in Sources */,
+				1E6350AA24E4E8A4009A0008 /* CHColor.m in Sources */,
 				1E9B5FB224BB01E900EAEE94 /* MASLayoutConstraint.m in Sources */,
+				1E6350BC24E53123009A0008 /* CHHitTest.m in Sources */,
 				1E506A7624BAAA1B00441C65 /* KVC.m in Sources */,
 				1EC6214324B9AB27000E948D /* FrameAnimation.m in Sources */,
 				1E506A5124B9E38C00441C65 /* MVCController.m in Sources */,
 				1ED42EA624CF089900A1FB76 /* MJExtensionConst.m in Sources */,
+				1E6350C924E6120E009A0008 /* CHImplicitAnimation.m in Sources */,
+				1E6350B524E50E67009A0008 /* CHGestures.m in Sources */,
 				1E9B5FAF24BB01E900EAEE94 /* ViewController+MASAdditions.m in Sources */,
 				1E0246A224CFA4DB00C978A4 /* CHTgCell.m in Sources */,
 				1E490DFF24D0FCA700575D65 /* CHCellModule.m in Sources */,
@@ -1369,6 +1502,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huocan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1388,6 +1526,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huocan;
 				PRODUCT_NAME = "$(TARGET_NAME)";

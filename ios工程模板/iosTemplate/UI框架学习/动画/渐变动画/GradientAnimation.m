@@ -85,6 +85,8 @@
     } completion:^(BOOL finished) {
         self.label.backgroundColor = [UIColor greenColor];
     }];
+    
+    
 }
 
 /// 旋转
@@ -106,6 +108,14 @@
      } completion:^(BOOL finished) {
          NSLog(@"动画完成");
      }];
+    
+    [UIView animateWithDuration:1.0 delay:1.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+           CGRect frame = self.label.frame;
+           frame.size = CGSizeMake(10, 15);
+           self.label.frame = frame;
+       } completion:^(BOOL finished) {
+           NSLog(@"动画完成");
+       }];
 }
 
 - (void)showHubInfo:(NSString *)hubInfo
@@ -136,15 +146,5 @@
     }];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
