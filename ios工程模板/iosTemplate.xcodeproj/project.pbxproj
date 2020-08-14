@@ -75,6 +75,7 @@
 		1E9B5FB524BB01E900EAEE94 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B5FAA24BB01E900EAEE94 /* MASConstraint.m */; };
 		1E9B5FB624BB01E900EAEE94 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B5FAC24BB01E900EAEE94 /* MASViewConstraint.m */; };
 		1E9B5FB724BB01E900EAEE94 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B5FAD24BB01E900EAEE94 /* MASViewAttribute.m */; };
+		1EA2C6F024E66C90001F61C1 /* CHReplicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA2C6EF24E66C90001F61C1 /* CHReplicatorLayer.m */; };
 		1EA8DB6824BAE1910080A076 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA8DB6724BAE1910080A076 /* Timer.m */; };
 		1EA8DB6F24BAE6580080A076 /* Autoresizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA8DB6E24BAE6580080A076 /* Autoresizing.m */; };
 		1EA8DB7324BAE9880080A076 /* Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA8DB7224BAE9880080A076 /* Autolayout.m */; };
@@ -248,6 +249,8 @@
 		1E9B5FAB24BB01E900EAEE94 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		1E9B5FAC24BB01E900EAEE94 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		1E9B5FAD24BB01E900EAEE94 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		1EA2C6EE24E66C90001F61C1 /* CHReplicatorLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHReplicatorLayer.h; sourceTree = "<group>"; };
+		1EA2C6EF24E66C90001F61C1 /* CHReplicatorLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHReplicatorLayer.m; sourceTree = "<group>"; };
 		1EA8DB6624BAE1910080A076 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		1EA8DB6724BAE1910080A076 /* Timer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		1EA8DB6D24BAE6570080A076 /* Autoresizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Autoresizing.h; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 				1E6350C124E57265009A0008 /* CHCAlayer.m */,
 				1E6350CB24E61613009A0008 /* CHBasicAnimation.h */,
 				1E6350CC24E61613009A0008 /* CHBasicAnimation.m */,
+				1EA2C6EE24E66C90001F61C1 /* CHReplicatorLayer.h */,
+				1EA2C6EF24E66C90001F61C1 /* CHReplicatorLayer.m */,
 			);
 			path = "核心动画";
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 		1E4495C32413DDC300B5B00E /* iosTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1EA2C6ED24E66705001F61C1 /* 面试题 */,
 				1E540C4124E378EB00DF1F5D /* 设计模式 */,
 				1E506A7124BAA5C600441C65 /* 公共方法 */,
 				1E506A1E24B9B53400441C65 /* resources */,
@@ -828,6 +834,13 @@
 				1E9B5FAD24BB01E900EAEE94 /* MASViewAttribute.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		1EA2C6ED24E66705001F61C1 /* 面试题 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "面试题";
 			sourceTree = "<group>";
 		};
 		1EA8DB6524BAE1750080A076 /* 定时器 */ = {
@@ -1350,6 +1363,7 @@
 				1E506A5124B9E38C00441C65 /* MVCController.m in Sources */,
 				1ED42EA624CF089900A1FB76 /* MJExtensionConst.m in Sources */,
 				1E6350C924E6120E009A0008 /* CHImplicitAnimation.m in Sources */,
+				1EA2C6F024E66C90001F61C1 /* CHReplicatorLayer.m in Sources */,
 				1E6350B524E50E67009A0008 /* CHGestures.m in Sources */,
 				1E9B5FAF24BB01E900EAEE94 /* ViewController+MASAdditions.m in Sources */,
 				1E0246A224CFA4DB00C978A4 /* CHTgCell.m in Sources */,

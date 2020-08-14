@@ -58,14 +58,35 @@
 //    [self.imageV.layer addAnimation:anim forKey:nil];
 }
 
-/*
-#pragma mark - Navigation
+- (void)groupAnimation{
+//    使用动画组的好处,不需要每次都去添加动画,设置动画完成时的属性.
+//    只需要把要执行的动画,添加到动画组的animations数组当中即可,
+//    最后把组动画添加到层上面,就会自动执行数组当中的动画.
+//    动画完成时设置的属性也只需要设置一次.
+    CABasicAnimation *anim = [CABasicAnimation animation];
+    anim.keyPath = @"position.y";
+    anim.toValue = @400;
+    //    anim.removedOnCompletion = NO;
+    //    anim.fillMode = kCAFillModeForwards;
+    //
+    //    [self.redView.layer addAnimation:anim forKey:nil];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    CABasicAnimation *anim2 = [CABasicAnimation animation];
+    anim2.keyPath = @"transform.scale";
+    anim2.toValue = @0.5;
+    //    anim2.removedOnCompletion = NO;
+    //    anim2.fillMode = kCAFillModeForwards;
+    //    [self.redView.layer addAnimation:anim2 forKey:nil];
+
+
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    //会自动执行animations数组当中所有的动画对象
+    group.animations = @[anim,anim2];
+
+    group.removedOnCompletion = NO;
+    group.fillMode = kCAFillModeForwards;
+    //        [self.redView.layer addAnimation:group forKey:nil];
+        
 }
-*/
-
 @end

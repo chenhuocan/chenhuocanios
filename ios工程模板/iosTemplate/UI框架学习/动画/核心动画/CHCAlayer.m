@@ -8,6 +8,25 @@
 //CALayer我们⼜又称它叫做层. 在每个UIView内部都有⼀一个layer这样⼀一个属性.
 //UIView之所以能够显⽰示,就是因为它⾥里⾯面有这个⼀一个层,才具有显⽰示的功能. 我们通过操作CALayer对象,可以很⽅方便地调整UIView的⼀一些外观属性. 可以给UIView设置阴影,圆⾓角,边框等等...
 
+//
+//11.UIView与核心动画对比?
+//
+//1.UIView和核心动画区别?
+//   核心动画只能添加到CALayer
+//   核心动画一切都是假象，并不会改变真实的值。
+//
+//2.什么时候使用UIView的动画?
+//  如果需要与用户交互就使用UIView的动画.
+//  不需要与用户交互可以使用核心动画
+//
+//3.什么场景使用核心动画最多?
+//  在转场动画中，核心动画的类型比较多
+//  根据一个路径做动画，只能用核心动画（帧动画）
+//  动画组：同时做多个动画
+
+
+
+
 #import "CHCAlayer.h"
 
 @interface CHCAlayer ()
@@ -60,8 +79,27 @@
     
     layer.contents = (id)[UIImage imageNamed:@"阿狸头像"].CGImage;
     
-
 }
+
+- (void)attributes{
+    //如果让⼀一张图⽚片只显⽰示上半部分或者下半部分
+        //contentsRect就是要显⽰示的范围.它是取值范围是(0~1);
+        //想让上部图⽚片只显⽰示上半部分contentsRect设置CGRectMake(0, 0, 1, 0.5);
+        //让下部图⽚片只显⽰示下半部分contentsRect设置为CGRectMake(0, 0.5, 1, 0.5)
+    
+    //让上部图⽚片绕着锚点进⾏行旋转,但是图⽚片的默认锚点在中⼼心,所以要把上部图⽚片的锚点设在 最底部.
+        //修改上部分的锚点为anchorPoint = CGPointMake(0.5, 1)
+        //但是修过锚点之后, 会出现⼀一个问题,就是上部分的图⽚片,会往上⾛走.导致两个图⽚片中间有⼀一个 空隙. 解决办法为.把两张图⽚片放到⼀一起.设置上部分图⽚片的锚点后.上部分图⽚片会上⾛走⼀一半的距离. 然后再设置下部图⽚片的锚点.设置上图⽚片的最上⾯面设置下部图⽚片锚点值为anchorPoint = CGPointMake(0.5, 0);
+        //    这样就能够办到两张图⽚片合成⼀一张的效果
+    
+    //1.让上部图片只显示上半部分
+    //self.topImageV.layer.contentsRect = CGRectMake(0, 0, 1, 0.5);
+    ////2.让下部图片只显示下半部分
+    //self.bottomImageV.layer.contentsRect = CGRectMake(0, 0.5, 1, 0.5);
+    //self.topImageV.layer.anchorPoint = CGPointMake(0.5, 1);
+    //self.bottomImageV.layer.anchorPoint = CGPointMake(0.5, 0);
+}
+
 -(void)positionAndAnchorPoint{
 //    NSLog(@"center = %@",NSStringFromCGPoint(self.orangeView.center));
 //    NSLog(@"position = %@",NSStringFromCGPoint(self.orangeView.layer.position));
@@ -103,5 +141,18 @@
 //}
 
 
-
+//渐变层
+- (void)gradientLayer {
+    
+//    CAGradientLayer *gradientL = [CAGradientLayer layer];
+//    gradientL.frame = self.bottomImageV.bounds;
+//    //设置渐变的颜色
+//    gradientL.colors = @[(id)[UIColor redColor].CGColor,(id)[UIColor greenColor].CGColor,(id)[UIColor yellowColor].CGColor];
+//    //设置渐变的方向
+//    gradientL.startPoint = CGPointMake(0, 0);
+//    gradientL.endPoint = CGPointMake(1, 0);
+//    
+//    //设置一个渐变到另一个渐变的起始位置
+//    gradientL.locations = @[@0.2,@0.6];
+}
 @end
