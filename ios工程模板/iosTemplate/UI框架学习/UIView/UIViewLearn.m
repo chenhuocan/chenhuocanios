@@ -90,4 +90,15 @@
 }
 */
 
+//当解析一个文件的时候会调用initWithCoder
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    
+    if(self = [super initWithCoder:aDecoder]){
+
+//        NSLog(@"initWithCoder==%@");
+    }
+    return self;
+}
+
+
 @end
