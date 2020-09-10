@@ -127,6 +127,7 @@
 		1ED5CBB824B968AB00C08332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5CBB724B968AB00C08332 /* Main.storyboard */; };
 		1ED5CBBD24B9827D00C08332 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5CBBC24B9827D00C08332 /* ViewController.m */; };
 		1ED5CBC224B98B8C00C08332 /* UIViewLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5CBC124B98B8C00C08332 /* UIViewLearn.m */; };
+		1EF21AF02509AA9F00486CB2 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF21AEF2509AA9F00486CB2 /* ProgressView.m */; };
 		1EF474872506669700552D6B /* CHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF474862506669700552D6B /* CHTabBarController.m */; };
 		1EF47489250668B500552D6B /* 主流框架.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF47488250668B500552D6B /* 主流框架.storyboard */; };
 		1EF4749D25066D7F00552D6B /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4749B25066D7F00552D6B /* UIImage+Image.m */; };
@@ -365,6 +366,8 @@
 		1ED5CBC024B98B8C00C08332 /* UIViewLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewLearn.h; sourceTree = "<group>"; };
 		1ED5CBC124B98B8C00C08332 /* UIViewLearn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewLearn.m; sourceTree = "<group>"; };
 		1ED5CBC324B9970500C08332 /* 控制台命令.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "控制台命令.md"; sourceTree = "<group>"; };
+		1EF21AEE2509AA9F00486CB2 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		1EF21AEF2509AA9F00486CB2 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 		1EF474852506669700552D6B /* CHTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTabBarController.h; sourceTree = "<group>"; };
 		1EF474862506669700552D6B /* CHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTabBarController.m; sourceTree = "<group>"; };
 		1EF47488250668B500552D6B /* 主流框架.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "主流框架.storyboard"; sourceTree = "<group>"; };
@@ -1632,6 +1635,8 @@
 		1EF4749E2506751800552D6B /* Quartz2D */ = {
 			isa = PBXGroup;
 			children = (
+				1EF21AEE2509AA9F00486CB2 /* ProgressView.h */,
+				1EF21AEF2509AA9F00486CB2 /* ProgressView.m */,
 				1EF4749F25067A5200552D6B /* CHDrawView.h */,
 				1EF474A025067A5200552D6B /* CHDrawView.m */,
 			);
@@ -1856,6 +1861,7 @@
 				1E506A5124B9E38C00441C65 /* MVCController.m in Sources */,
 				1ED42EA624CF089900A1FB76 /* MJExtensionConst.m in Sources */,
 				1E6350C924E6120E009A0008 /* CHImplicitAnimation.m in Sources */,
+				1EF21AF02509AA9F00486CB2 /* ProgressView.m in Sources */,
 				1EA2C6F024E66C90001F61C1 /* CHReplicatorLayer.m in Sources */,
 				1E6350B524E50E67009A0008 /* CHGestures.m in Sources */,
 				1E9B5FAF24BB01E900EAEE94 /* ViewController+MASAdditions.m in Sources */,
